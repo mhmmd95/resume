@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Mohammad Alabras</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="cv,resume" name="keywords" />
+    <meta content="mohammad alabras resume" name="description" />
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+        /* Center the loader */
+
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 120px;
+            height: 120px;
+            margin: -76px 0 0 -76px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Add animation to "page content" */
+
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s;
+        }
+
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 0px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1;
+            }
+        }
+
+        #myDiv {
+            display: none;
+        }
+    </style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+
+        .container {
+            position: relative;
+        }
+
+        /* Hide the images by default */
+
+        .mySlides {
+            display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Container for image text */
+
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Six columns side by side */
+
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+
+        .demo {
+            opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+    </style>
+    <style>
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #d6dee1;
+            border-radius: 20px;
+            border: 6px solid transparent;
+            background-clip: content-box;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #a8bbbf;
+        }
+
+        .sliderImg {
+            width: 100%;
+            /* border-radius: 25px 25px 0px 0px; */
+        }
+    </style>
+</head>
+
+<body id="page-top" onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+
+    <div style="display: none" id="myDiv" class="animate-bottom">
+        <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+            <div class="container">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div id="home" class="intro route bg-image" style="background-image: url(img/background.jpg)">
+            <div class="overlay-itro"></div>
+            <div class="intro-content display-table">
+                <div class="table-cell">
+                    <div class="container">
+                        <h1 class="intro-title mb-4">Mohammad Alabras</h1>
+                        <p class="intro-subtitle">
+                            <span class="text-slider-items">Software Engineer, Javascript Developer,ReactJS Developer,PHP Developer,Laravel Developer</span>
+                            <strong class="text-slider"></strong>
+                        </p>
+                        <p class="pt-3">
+                            <a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">
+                                <span style="font-weight: bold"> Show CV </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ Intro Skew End /-->
+
+        <section id="about" class="about-mf sect-pt4 route">
+            <div style="margin-top: 100px" class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="box-shadow-full">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-7">
+                                            <div class="title-box-2">
+                                                <h5 class="title-left">Profile</h5>
+                                            </div>
+                                            <div class="about-info">
+                                                <p>
+                                                    <span class="title-s">Name: </span> <br /><span>Mohammad
+                                                        Alabras</span>
+                                                </p>
+                                                <p>
+                                                    <span class="title-s">Email: </span> <br />
+                                                    <span>mohammadalabras77@gmail.com</span>
+                                                </p>
+                                                <p>
+                                                    <span class="title-s">Phone: </span><br />
+                                                    <span>+201032418635</span>
+                                                </p>
+                                                <p>
+                                                    <span class="title-s">Date Of Birth: </span><br />
+                                                    <span>14-04-1995</span>
+                                                </p>
+                                                <p>
+                                                    <span class="title-s">Address: </span><br />
+                                                    <span>Madinat Nasir Cairo - Egypt</span>
+                                                </p>
+
+                                                <p>
+                                                    <span class="title-s">Nationality: </span><br />
+                                                    <span>Syrian</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-mf">
+                                        <p class="title-s">Proficient</p>
+                                        <span class="badge bg-primary text-white">PHP Laravel Framework</span>
+                                        <span class="badge bg-primary text-white">JavaScript</span>
+                                        <span class="badge bg-primary text-white">MySql</span>
+                                        <span class="badge bg-primary text-white">Git</span>
+                                    </div>
+                                    <div class="skill-mf">
+                                        <p class="title-s">Familiar</p>
+                                        <span class="badge bg-primary text-white">ReactJs</span>
+                                        <span class="badge bg-primary text-white">Design Patterns</span>
+                                        <span class="badge bg-primary text-white">Pusher, WebSockets for realtime
+                                            applications</span>
+                                        <span class="badge bg-primary text-white">Pest for testing</span>
+                                        <span class="badge bg-primary text-white">linux terminal</span>
+                                        <span class="badge bg-primary text-white">Event-Sourcing</span>
+                                        <span class="badge bg-primary text-white">CQRS</span>
+                                    </div>
+                                    <div class="flex">
+                                        <img style="width: 90px" src="img/git.png" alt=" " />
+                                        <img style="width: 90px" src="img/postman.png" alt=" " />
+                                        <img style="width: 90px" src="img/laravel.svg" alt=" " />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about-me pt-4 pt-md-0">
+                                        <div class="title-box-2">
+                                            <h5 class="title-left">About me</h5>
+                                        </div>
+                                        <p class="lead">Hello, I am a highly skilled Full Stack Web Developer with a
+                                            specialization in backend development. I possess a strong passion for
+                                            creating robust back-end systems using the Laravel framework, while also
+                                            familiar using ReactJS library and Blade templating for front-end
+                                            development. Collaborating within a team setting is where I thrive, as I
+                                            genuinely enjoy sharing my knowledge and skills to ensure optimal results
+                                            that bring significant benefits to my recruiters.
+                                        </p>
+                                        <br />
+                                        <h5>Education</h5>
+                                        <p class="lead">
+                                            Information technology engineering - Software engineering specialist -
+                                            Damascus University
+                                        </p>
+                                        <br />
+                                        <h5>Skill Highlights</h5>
+                                        <ul>
+                                            <li>convert ideas to real products</li>
+                                            <li>Excellent self-education</li>
+                                            <li>Complex Problem Sloving</li>
+                                            <li>Write clean code</li>
+                                            <li>fast learner</li>
+                                        </ul>
+                                        <h5>Work Experience</h5>
+                                        <ul>
+                                            <li>FullStack developer at BWire company</li>
+                                            <li>Pharaon group, Syria — Software developer, full-time</li>
+                                            <p>System analysis and problem solving plus new features development in
+                                                Syria Sept 2021 -2022</p>
+                                            <li>Like IPTV company</li>
+                                            <p>collaborate with the front end team -mobile and web- to create new
+                                                application features such as ADS and version functionality for the
+                                                mobile application. Laravel restful APIs
+                                                Refactored an old version of an existing code plus developed a way to
+                                                speed up the web application for the IPTV control panel by optimizing
+                                                database queries. Mysql, laravel
+                                                Uploaded current systems to gitlab, and make advantage of version
+                                                control to smoothly separate the work between different developers</p>
+                                            <li>Sawa isp</li>
+                                            <p>Worked on the internet provider control panel’s new features to robust
+                                                the ISP productivity</p>
+                                            <li>Freelance Backend developer</li>
+                                        </ul>
+                                        <h5>Important links</h5>
+                                        <ul>
+                                            <li><a target="_blank" href='https://www.linkedin.com/in/muhammad-alabrs-888b81168'>linkedIn Profile</a></li>
+                                            <p>I am actively engaged on LinkedIn, and I invite you to connect with me. Let's build professional connections and expand our networks together. Feel free to reach out and connect!</p>
+                                            <li>e-shop <a target="_blank" href='https://github.com/mhmmd95/e-shop'>github repository</a></li>
+                                            <div>
+                                                <span class="badge text-white bg-primary">Laravel</span>
+                                                <span class="badge text-white bg-primary">Design patterns</span>
+                                                <span class="badge text-white bg-primary">DDD</span>
+                                                <span class="badge text-white bg-primary">Maintainability</span>
+                                                <span class="badge text-white bg-primary">Best practises</span>
+                                                <p>A Laravel Project uses best practises with DDD pattern</p>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <center>
+                                <p class="pt-3">
+                                    <a class="btn btn-primary btn js-scroll px-4" href="Mohammad Alabras resume.pdf"
+                                        target="_blank" role="button"><span style="font-weight: bold">Download
+                                            CV</span></a>
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="# " class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <div id="preloader "></div>
+    </div>
+    <!-- JavaScript Libraries -->
+   
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 1500);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/counterup/jquery.waypoints.min.js"></script>
+    <script src="lib/counterup/jquery.counterup.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
